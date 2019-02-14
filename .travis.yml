@@ -59,6 +59,5 @@ before_script:
   - $CXX --version
   - cd ${TRAVIS_BUILD_DIR}
 script:
-- sudo apt update
 - sudo apt-get install libsfml-dev
 - g++ Snake.cpp -I. -o snake -std=c++11 -lsfml-graphics -lsfml-audio -lsfml-window -lsfml-system
